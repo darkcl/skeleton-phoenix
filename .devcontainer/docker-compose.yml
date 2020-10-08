@@ -24,7 +24,6 @@ services:
 
     volumes:
       - ..:/workspace:cached
-      - ~/.gitconfig:/root/.gitconfig
 
 
     # environment:
@@ -44,8 +43,6 @@ services:
       - POSTGRES_USER=postgres
     ports:
       - 5432:5432
-    volumes:
-      - /var/lib/postgresql/data
 
 secrets:
   host_ssh_key:
